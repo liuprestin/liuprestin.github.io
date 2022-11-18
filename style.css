@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; /* For testing purposes*/
+}
+  
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/*------- Header ------*/
+.intro-container {
+    width: 100%;
+    height: 500px;
+    background: no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-background {
+    background-image: url('./img/beach.jpg');
+    
+}
+
+
+.intro {
+    transform: translate(0,30%);
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+    padding: 30px;
+}
+
+.nav-container {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2px;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+/*----- NAV and Logo ------*/
+.logo {
+    float: left;
+}
+
+.nav {
+    padding-left: 0;
+    list-style: none;
+    float: right !important;
+}
+
+.nav>li {
+    float:left;
+}
+
+.nav>li>a {
+    padding: 10px;
+    color: whitesmoke;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+/*Project container*/
+
+.prj-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    line-height: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.prj-ele {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    align-self: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; 
+    position: relative;
+  text-align: center;
+}
+
+.prj-ele p{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+.prj-ele img {
+    width: 100%;
+    height: 100%;
+}
+
+.prj-ele:hover {
+    filter: brightness(200%);
+}
+
+/*Footer container*/
+
+.footer-container {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container div {
+    padding: 20px;
+}
+
+.footer-nav {
+    padding-left: 0;
+    
+    align-self: right;
+}
+
+.footer-nav>ul {
+    list-style: none;
+}
+
+.footer-nav>ul>li>a {
+    color: whitesmoke;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.description {
+    width: 300px;
+}
